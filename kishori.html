@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registration</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        #frm{
+            background-color:white;
+            margin:25px 30% 60px 30%;
+            padding: 20px;
+        }
+        .input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        b1{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body style="background-color:#e24f7b";>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+                <img src="nit_logo.png" alt="nit" width="10%">
+            </span>
+            <span><button>login</button></span>
+        </div>
+    </nav>
+    <h3>Create an account</h3>
+    <div id="frm">
+    <form>
+        <b class="b1">Name :</b><div  class="input"><input  type="text" autocomplete="off" autofocus="off" placeholder="name" name="name"></div>
+        <br>
+        <b class="b1">Password:</b><div  class="input"><input class="input" type="password" placeholder="password" name="password"></div>
+        <br>
+        <b class="b1">University rollno :</b><div><input class="input" type="text" autocomplete="off" autofocus="off" placeholder="roll no" name="roll"></div>
+        <br>
+        <b class="b1">Email-id :</b><div><input class="input" type="text" autocomplete="off" autofocus="off" placeholder="Email-id" name="mail"></div>
+        <br>
+        <div>
+            <p><b>select your gender:</b></p>
+            <input name="gender" type="radio" >male
+            <input name="gender" type="radio" >female
+            <input name="gender" type="radio" >other
+        </div>
+        <br>
+        <div>
+            <b class="b1">Select Stream:</b>
+            <div class="input"><input name="department" list="departments" placeholder="Department">
+            <datalist id="departments">
+                <option value="AIML">
+                <option value="CSBS">
+                <option value="CSE">
+                <option value="IT">
+                <option value="MACHINE LEARNING">
+            </datalist>
+        </div>
+        </div>
+        <b class="b1">Address :</b><div><input class="input" type="text" autocomplete="off" autofocus="off" placeholder="Address" name="Address"></div>
+        <br>
+    </form>
+    <button type="button" class="btn btn-secondary">Register</button>
+</div>
+  
+  
+</body>
+</html>
